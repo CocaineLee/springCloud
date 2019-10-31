@@ -1,3 +1,0 @@
-Manifest-Version: 1.0
-Main-Class: atguigu.springcloud.DeptProvider8001_App
-

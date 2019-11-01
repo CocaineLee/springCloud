@@ -1,4 +1,4 @@
-package atguigu.springcloud;
+package atguigu;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,7 +9,7 @@ import org.springframework.context.annotation.ComponentScan;
 @EnableEurekaClient
 @EnableFeignClients(basePackages ={"atguigu.springcloud"})
 //@ComponentScan(basePackageClasses = atguigu.springcloud.service.DeptClientService.class)
-@ComponentScan("atguigu.springcloud.service")
+@ComponentScan(basePackages = {"atguigu.springcloud.service","atguigu.springcloud"})
 @SpringBootApplication
 public class DeptConsumer80Feign_App {
     public static void main(String[] args) {

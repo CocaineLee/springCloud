@@ -1,0 +1,18 @@
+server:
+  port: 9527
+spring:
+  application:
+    name: microservicecloud-zuul-gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://leeNode1:7001/eureka,http://leeNode2:7002/eureka,http://leeNode3:7003/eureka
+  instance:
+    instance-id: gateway-9527.com
+    prefer-ip-address: true
+
+info:
+  app.name: atguigu-microservicecloud
+  company.name: www.atguigu.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$

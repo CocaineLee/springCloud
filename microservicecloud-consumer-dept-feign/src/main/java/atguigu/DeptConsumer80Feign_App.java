@@ -8,8 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @EnableEurekaClient
 @EnableFeignClients(basePackages ={"atguigu.springcloud"})
-//@ComponentScan(basePackageClasses = atguigu.springcloud.service.DeptClientService.class)
-@ComponentScan(basePackages = {"atguigu.springcloud.service","atguigu.springcloud"})
+@ComponentScan(basePackages = {"atguigu.springcloud"})
 @SpringBootApplication
 public class DeptConsumer80Feign_App {
     public static void main(String[] args) {

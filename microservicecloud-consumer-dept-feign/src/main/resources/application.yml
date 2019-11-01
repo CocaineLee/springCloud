@@ -5,9 +5,9 @@ eureka:
     register-with-eureka: false
     service-url:
       defaultZone: http://leeNode1:7001/eureka/,http://leeNode2:7002/eureka/,http://leeNode3:7003/eureka/
-#feign:
-#  hystrix:
-#    enabled: true
+feign:
+  hystrix:
+    enabled: true
 #    command:
 #      default:
 #        execution:

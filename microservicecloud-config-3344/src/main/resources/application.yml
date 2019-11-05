@@ -1,0 +1,13 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    name: microservicecloud-config
+  cloud:
+    config:
+      server:
+        git:
+#          此处由ssh换成http
+          uri: https://github.com/CocaineLee/mircroservicecloud-config.git
+#          skip-ssl-validation: true

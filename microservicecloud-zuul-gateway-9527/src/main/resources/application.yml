@@ -16,3 +16,11 @@ info:
   company.name: www.atguigu.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
+
+zuul:
+  routes:
+    mydept.serviceId: microservicecloud-dept
+    mydept.path: /mydept/**
+  ignored-services: "*"
+#  ignored-services: microservicecloud-dept 禁用单个域名
+  prefix: /atguigu

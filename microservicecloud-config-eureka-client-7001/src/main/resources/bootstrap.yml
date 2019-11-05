@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      name: microservicecloud-config-eureka-client
+      profile: dev
+      lable: master
+      uri: http://config-3344:3344
+
